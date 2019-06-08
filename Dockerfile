@@ -1,4 +1,4 @@
-FROM dcm4che/slapd-dcm4chee:5.5.1
+FROM dcm4che/slapd-dcm4chee:2.4.44-17.0
 
 # custom attributes
 COPY opendicom_custom_attributes.ldif /etc/ldap/schema/
