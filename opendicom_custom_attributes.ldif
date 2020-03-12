@@ -49,3 +49,11 @@ dn: dcmEntity=Instance,dicomDeviceName=dcm4chee-arc,cn=Devices,cn=DICOM Configur
 changetype: modify
 add: dcmCustomAttribute1
 dcmCustomAttribute1: DicomAttribute[@tag="0040E008"]/Item[@number="1"]/DicomAttribute[@tag="00080100"]/Value[@number="1"]
+
+#
+# AET ORC 
+#
+dn: dicomDeviceName=dcm4chee-arc,cn=Devices,cn=DICOM Configuration,dc=dcm4che,dc=org
+changetype: modify
+add: hl7ScheduledStationAETInOrder
+hl7ScheduledStationAETInOrder: ORC_18
